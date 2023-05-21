@@ -2,7 +2,7 @@ pipeline{
 
     agent any
 
-    environments{
+    environment{
 
         DOCKER_USERNAME = "cloudhub12"
         APP_NAME = "gitops-agro-app"
