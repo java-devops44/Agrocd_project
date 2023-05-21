@@ -4,7 +4,7 @@ pipeline{
 
     envrironments{
 
-        DOCKER_USERNAME = "java-devops44
+        DOCKER_USERNAME = "cloudhub12"
         APP_NAME = "gitops-agro-app"
         IMAGE_TAG = "${BUILD_NUMBER}"
         IMAGE_NAME = "${DOCKER_USERNAME} + "/" + ${APP_NAME}"
