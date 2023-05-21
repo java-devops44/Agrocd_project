@@ -2,7 +2,7 @@ pipeline{
 
     agent any
 
-    envrironments{
+    environments{
 
         DOCKER_USERNAME = "cloudhub12"
         APP_NAME = "gitops-agro-app"
@@ -27,7 +27,7 @@ pipeline{
 
         stage('checkout the code'){
 
-            stpes{
+            steps{
 
                 script{
 
