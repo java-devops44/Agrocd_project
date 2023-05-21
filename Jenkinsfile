@@ -11,13 +11,15 @@ pipeline{
         REGISTORY_CRID = "dockerhub"
 
     }
-    stage('checkout the code'){
+    stages{
 
-        steps{
+        stage('checkout the code'){
 
-            script{
+            steps{
 
-                git branch: 'main', credentialsId: 'gitcred', url: 'https://github.com/java-devops44/Agrocd_project.git'
+                script{
+
+                    git branch: 'main', credentialsId: 'gitcred', url: 'https://github.com/java-devops44/Agrocd_project.git'
                 
 
             }
@@ -25,3 +27,4 @@ pipeline{
     }
 }
 
+   
