@@ -11,28 +11,15 @@ pipeline{
         REGISTORY_CRID = "dockerhub"
 
     }
-    stages{
+    stage('checkout the code'){
 
-        stage('Clean workspace'){
+        steps{
 
-            steps{
+            script{
 
-                script{
+                git branch: 'main', credentialsId: 'gitcred', url: 'https://github.com/java-devops44/Agrocd_project.git'
+                
 
-                    cleanWp()
-                }
-            }
-        }
-
-
-        stage('checkout the code'){
-
-            steps{
-
-                script{
-
-                    git branch: 'main', credentialsId: 'gitcred', url: 'https://github.com/java-devops44/Agrocd_project.git'
-                }
             }
         }
     }
