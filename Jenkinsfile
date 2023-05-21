@@ -33,7 +33,7 @@ pipeline{
 
                 script{
 
-                    sh "mvn verify _DskipUnitTests"
+                    sh "mvn verify -DskipUnitTests"
                 }
             }
 
