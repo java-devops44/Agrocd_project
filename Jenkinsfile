@@ -20,7 +20,7 @@ pipeline{
                 script{
 
                     git branch: 'main', credentialsId: 'gitcred', url: 'https://github.com/java-devops44/Agrocd_project.git'
-                
+                }
 
             }
         }
